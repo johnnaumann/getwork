@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/source-sans-pro-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/source-sans-pro-latin-600-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/source-sans-pro-latin-700-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@layer utilities {
+  .bg-navy {
+    background-color: #092137;
+  }
+
+  .bg-background {
+    background-color: #ffffff;
+  }
+
+  .text-navy {
+    color: #092137;
+  }
+
+  .text-primary {
+    color: #2d95ec;
+  }
+
+  .text-muted {
+    color: #535353;
+  }
+
+  .bg-primary {
+    background-color: #2d95ec;
+  }
+}
+

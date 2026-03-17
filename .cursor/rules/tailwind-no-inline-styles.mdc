@@ -1,0 +1,31 @@
+---
+description: Enforce Tailwind-only styling and avoid inline styles
+alwaysApply: true
+---
+
+# Tailwind Styling Rule
+
+- Do not use inline styles (`style=""` in HTML or `style={{}}` in JS/TS).
+- Prefer Tailwind utility classes for all visual styling.
+- If a value is reused or is part of design language (colors, spacing, font sizes, radii), extract it into Tailwind tokens/config first, then use class names.
+- Prefer semantic utility usage (`bg-primary`, `text-muted`, `px-6`) over ad-hoc arbitrary values.
+- For one-off dynamic behavior, prefer toggling Tailwind classes in JS rather than setting inline style properties.
+
+## Examples
+
+```html
+<!-- Bad -->
+<div style="width:293px;height:52px;"></div>
+
+<!-- Good -->
+<div class="w-[293px] h-[52px]"></div>
+```
+
+```js
+// Bad
+el.style.backgroundColor = '#092137';
+
+// Good
+el.classList.add('bg-navy');
+```
+

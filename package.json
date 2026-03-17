@@ -1,0 +1,33 @@
+{
+  "name": "getwork",
+  "version": "1.0.0",
+  "description": "This repo tracks “plugins” as small, self-contained directories under `plugins/` with a `manifest.json` and optional docs.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnaumann/getwork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/johnnaumann/getwork/issues"
+  },
+  "homepage": "https://github.com/johnnaumann/getwork#readme",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1",
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "@fontsource/source-sans-pro": "^5.2.5"
+  }
+}
