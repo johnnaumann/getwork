@@ -28,6 +28,7 @@
     "vite": "^8.0.0"
   },
   "dependencies": {
+    "@fontsource/be-vietnam-pro": "^5.2.8",
     "@fontsource/source-sans-pro": "^5.2.5"
   }
 }
