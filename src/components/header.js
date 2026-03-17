@@ -2,7 +2,7 @@ import logoUrl from '/logo-strathclyde.svg';
 
 export function renderHeader() {
   return `
-    <header class="fixed top-0 left-0 right-0 flex justify-center items-center w-full bg-red-500 py-[35px]">
+    <header class="fixed top-0 left-0 right-0 flex justify-center items-center w-full p-[35px]">
       <div class="flex justify-between items-center w-[1220px]">
         <a href="#hero">
           <img
