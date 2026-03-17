@@ -4,12 +4,11 @@ export function renderHeader() {
   return `
     <header class="fixed top-0 left-0 right-0 flex justify-center items-center w-full bg-red-500 py-[35px]">
       <div class="flex justify-between items-center w-[1220px]">
-        <a href="#hero" class="flex items-center gap-3 text-sm font-semibold text-white">
+        <a href="#hero">
           <img
             src="${logoUrl}"
             alt="Strathclyde Domestic Roofing logo"
-            class="block object-contain"
-            style="width:293px;height:52px;"
+            class="block h-[52px] w-[293px] object-contain"
           />
         </a>
         <div class="flex items-center">

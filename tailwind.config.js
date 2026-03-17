@@ -10,7 +10,8 @@ module.exports = {
         background: '#ffffff'
       },
       fontFamily: {
-        sans: ['"Be Vietnam Pro"', '"Source Sans Pro"', 'system-ui', 'sans-serif']
+        sans: ['"Source Sans Pro"', 'system-ui', 'sans-serif'],
+        title: ['"Be Vietnam Pro"', 'system-ui', 'sans-serif']
       }
     }
   },
