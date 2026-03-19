@@ -4,7 +4,7 @@ import hamburgerUrl from '/img/hamburger.png';
 export function renderHeader() {
   return `
     <header class="fixed top-0 left-0 right-0 flex justify-center items-center w-full md:p-[35px] p-[20px] z-10 overflow-hidden">
-      <div class="flex justify-between items-center w-[1220px]">
+      <div class="flex justify-between items-center w-[1240px]">
         <a href="#hero">
           <img
             src="${logoUrl}"
