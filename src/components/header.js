@@ -1,6 +1,8 @@
 import logoSvg from '/logo-strathclyde.svg?raw';
 import hamburgerUrl from '/img/hamburger.png';
 
+const logoSvgNoTransition = logoSvg.replace('<svg ', '<svg class="transition-none" ');
+
 export function renderHeader() {
   return `
     <div class="group">
@@ -9,7 +11,7 @@ export function renderHeader() {
         <div class="relative z-10 flex justify-between items-center w-full max-w-[1240px] flex-nowrap">
           <a href="#home" class="lg:group-hover:[--fill-0:#333333]">
             <span class="block w-[164px] h-[30px] md:h-[52px] md:w-[293px] shrink-0">
-              ${logoSvg}
+              ${logoSvgNoTransition}
             </span>
           </a>
           <div class="flex items-center flex-nowrap">
