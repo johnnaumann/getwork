@@ -10,7 +10,7 @@ export function renderHero() {
     <section id="hero" class="md:h-[720px] h-[570px] w-full relative overflow-hidden">
       <div class="absolute top-0 left-0 w-full md:h-[720px] h-[570px] md:px-[35px] px-[20px]">
         <div class="mx-auto flex md:h-[720px] h-[570px] w-[1220px] relative">
-          <div class="w-[1202px] h-[1054px] absolute top-[-95px] lg:right-[-325px] md:right-[-165px] right-[-50px] rotate-[5deg]">
+          <div class="w-[1202px] h-[1054px] absolute top-[-95px] tablet:right-[-325px] md:right-[-165px] right-[-50px] rotate-[5deg]">
             <img src="${heroPatternUrl}" alt="Hero image" class="absolute top-0 left-0 w-full h-full z-0">
           </div>
         </div>
@@ -27,7 +27,7 @@ export function renderHero() {
 
       <div class="absolute top-0 left-0 w-full md:h-[720px] h-[570px] md:px-[35px] px-[20px]">
         <div class="mx-auto flex md:h-[720px] h-[570px] w-[1220px] relative">
-          <div class="lg:mt-[200px] md:mt-[180px] mt-[105px]">
+          <div class="tablet:mt-[200px] md:mt-[180px] mt-[105px]">
             <h2 class="text-white text-[27px] md:text-[40px] leading-[34px] md:leading-[51px] w-[390px] md:w-[650px] font-bold balance-text">Certified and trusted roofing specialists <br class="md:hidden">in Glasgow</h2>
             <ul class="text-[#D2D2D2] md:text-[18px] text-[15px] font-medium md:mt-[30px] mt-[35px] font-title mb-[37.5px] md:mb-[30px]">
               <li class="flex items-center mb-[8px]">
@@ -48,7 +48,7 @@ export function renderHero() {
               <span class="text-[#D2D2D2] md:text-[15px] text-[14px] font-medium">Prefer to call?</span><a href="tel:+448008008000" class="hover:text-[#138CAB] transition-colors text-[#45D1EF] md:text-[20px] text-[16px] font-title md:ml-[2px] ml-[6px] font-semibold">0800 800 8000</a>
             </div>
           </div>
-          <div class="w-[1202px] h-[1054px] absolute top-[-95px] lg:right-[-325px] right-[-165px] rotate-[5deg] hidden md:block">
+          <div class="w-[1202px] h-[1054px] absolute top-[-95px] tablet:right-[-325px] right-[-165px] rotate-[5deg] hidden md:block">
             <img src="${heroImageUrl}" alt="Hero image" class="absolute top-[278px] left-[350px] block w-[549.5px] h-[530.5px] relative z-10">
           </div>
         </div>
