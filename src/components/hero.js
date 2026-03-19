@@ -2,24 +2,29 @@ import heroPatternUrl from '/img/hero-pattern.png';
 import listIconUrl from '/img/list.png';
 import trustmarkUrl from '/img/trustmark.png';
 import heroImageUrl from '/img/hero-image.png';
+import trustpilotUrl from '/img/trustpilot.png';
 
 export function renderHero() {
   return `
-    <section id="hero" class="h-[740px] w-full relative overflow-x-hidden">
-      <div class="absolute top-0 left-0 w-full h-[740px] px-[35px]">
-        <div class="mx-auto flex h-[740px] w-[1220px] relative">
+    <section id="hero" class="h-[720px] w-full relative overflow-x-hidden">
+      <div class="absolute top-0 left-0 w-full h-[720px] px-[35px]">
+        <div class="mx-auto flex h-[720px] w-[1220px] relative">
           <div class="w-[1202px] h-[1054px] absolute top-[-95px] right-[-325px] rotate-[5deg]">
             <img src="${heroPatternUrl}" alt="Hero image" class="absolute top-0 left-0 w-full h-full z-0">
           </div>
         </div>
       </div>
 
-      <div class="absolute top-0 left-0 right-0 w-full h-[740px]">
-        <div class="absolute bottom-0 left-0 w-full h-[120px] bg-white"></div>
+      <div class="absolute top-0 left-0 right-0 w-full h-[720px]">
+        <div class="absolute bottom-0 left-0 w-full h-[100px] bg-white">
+          <div class="mx-auto flex w-[1220px] h-full items-center">
+            <img src="${trustpilotUrl}" alt="" class="w-[400px] h-[24px]">
+          </div>
+        </div>
       </div>
 
-      <div class="absolute top-0 left-0 w-full h-[740px] px-[35px]">
-        <div class="mx-auto flex h-[740px] w-[1220px] relative">
+      <div class="absolute top-0 left-0 w-full h-[720px] px-[35px]">
+        <div class="mx-auto flex h-[720px] w-[1220px] relative">
           <div class="mt-[200px]">
             <h2 class="text-white text-[40px] leading-[51px] font-bold">Certified and trusted roofing<br>specialists in Glasgow</h2>
             <ul class="text-[#D2D2D2] text-[18px] font-medium mt-[30px] font-title mb-[30px]">
