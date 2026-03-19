@@ -29,7 +29,7 @@ export function renderHero() {
         <div class="mx-auto flex md:h-[720px] h-[570px] w-[1220px] relative">
           <div class="lg:mt-[200px] md:mt-[180px] mt-[105px]">
             <h2 class="text-white text-[27px] md:text-[40px] leading-[34px] md:leading-[51px] w-[390px] md:w-[650px] font-bold balance-text">Certified and trusted roofing specialists <br class="md:hidden">in Glasgow</h2>
-            <ul class="text-[#D2D2D2] md:text-[18px] text-[15px] font-medium md:mt-[30px] mt-[35px] font-title mb-[37.5px]">
+            <ul class="text-[#D2D2D2] md:text-[18px] text-[15px] font-medium md:mt-[30px] mt-[35px] font-title mb-[37.5px] md:mb-[30px]">
               <li class="flex items-center mb-[8px]">
                 <img src="${listIconUrl}" class="md:w-[24px] w-[18px] h-[18px] md:h-[24px] inline-block md:mr-[15px] mr-[10px]"> NFRC &amp; Trustmark Certified
               </li>
