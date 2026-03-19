@@ -1,5 +1,6 @@
 import logoSvg from '/logo-strathclyde.svg?raw';
 import hamburgerUrl from '/img/hamburger.png';
+import caretUrl from '/img/caret.png';
 
 export function renderHeader() {
   return `
@@ -15,7 +16,14 @@ export function renderHeader() {
           <div class="flex items-center flex-nowrap">
             <nav class="hidden lg:flex text-white text-[15px] tracking-[-0.3px] transition-colors lg:group-hover:text-black flex-nowrap items-center whitespace-nowrap gap-[clamp(16px,2.5vw,34px)]">
               <a href="#home">Home</a>
-              <a href="#services">Services</a>
+            <a href="#services" class="flex items-center">
+              Services
+              <img
+                src="${caretUrl}"
+                alt=""
+                class="ml-[6px] w-[10px] h-[6px] lg:group-hover:[filter:invert(1)]"
+              />
+            </a>
               <a href="#why-us">Why us?</a>
               <a href="#reviews">Reviews</a>
               <a href="#recent-work">Recent work</a>
