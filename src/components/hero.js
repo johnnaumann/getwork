@@ -31,17 +31,32 @@ export function renderHero() {
             <h2 class="text-white text-[27px] md:text-[40px] leading-[34px] md:leading-[51px] w-[390px] md:w-[650px] font-bold balance-text">Certified and trusted roofing specialists <br class="md:hidden">in Glasgow</h2>
             <ul class="text-[#D2D2D2] md:text-[18px] text-[15px] font-medium md:mt-[30px] mt-[35px] font-title mb-[37.5px] md:mb-[30px]">
               <li class="flex items-center mb-[8px]">
-                <img src="${listIconUrl}" class="md:w-[24px] w-[18px] h-[18px] md:h-[24px] inline-block md:mr-[15px] mr-[10px]"> NFRC &amp; Trustmark Certified
+                <img
+                  src="${listIconUrl}"
+                  alt=""
+                  aria-hidden="true"
+                  class="md:w-[24px] w-[18px] h-[18px] md:h-[24px] inline-block md:mr-[15px] mr-[10px]"
+                /> NFRC &amp; Trustmark Certified
               </li>
               <li class="flex items-center mb-[8px]">
-                <img src="${listIconUrl}" class="md:w-[24px] w-[18px] h-[18px] md:h-[24px] inline-block md:mr-[15px] mr-[10px]"> <span class="md:block hidden">Scottish Home Improvement</span><span class="md:hidden block">SHI</span>&nbsp;Awards finalist 2023/24/25</span>
+                <img
+                  src="${listIconUrl}"
+                  alt=""
+                  aria-hidden="true"
+                  class="md:w-[24px] w-[18px] h-[18px] md:h-[24px] inline-block md:mr-[15px] mr-[10px]"
+                /> <span class="md:block hidden">Scottish Home Improvement</span><span class="md:hidden block">SHI</span>&nbsp;Awards finalist 2023/24/25
               </li>
               <li class="flex items-center">
-                <img src="${listIconUrl}" class="md:w-[24px] w-[18px] h-[18px] md:h-[24px] inline-block md:mr-[15px] mr-[10px]"> 20 year warranty on all new roofs
+                <img
+                  src="${listIconUrl}"
+                  alt=""
+                  aria-hidden="true"
+                  class="md:w-[24px] w-[18px] h-[18px] md:h-[24px] inline-block md:mr-[15px] mr-[10px]"
+                /> 20 year warranty on all new roofs
               </li>
             </ul>
             <div class="flex items-center mb-[30px]">
-              <button class="tracking-[-0.4px] font-semibold bg-[#17BADC] rounded-full text-white font-medium md:text-[20px] text-[14px] md:w-[350px] w-[233px] h-[50px] md:h-[60px] hover:bg-[#138CAB] transition-colors cursor-pointer">Book your free survey and quote</button>
+              <button type="button" class="tracking-[-0.4px] font-semibold bg-[#17BADC] rounded-full text-white font-medium md:text-[20px] text-[14px] md:w-[350px] w-[233px] h-[50px] md:h-[60px] hover:bg-[#138CAB] transition-colors cursor-pointer">Book your free survey and quote</button>
               <img src="${trustmarkUrl}" alt="" class="block md:w-[80px] w-[67px] md:h-[50px] h-[42px] md:ml-[30px] ml-[20px]">
             </div>
             <div class="flex items-center md:pl-[29px]">
