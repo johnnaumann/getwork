@@ -70,6 +70,10 @@ Workflow file: `.github/workflows/deploy.yml`
 
 - [https://johnnaumann.github.io/getwork/](https://johnnaumann.github.io/getwork/)
 
+## Figma MCP
+
+You can use the **Figma MCP** via the plugin in `plugins/figma/`. Set `FIGMA_ACCESS_TOKEN` (a Figma Personal Access Token) in your environment, then use the Figma MCP from your editor to work with designs from this repo.
+
 ## Notes
 
 - Vite `base` is configured for a project-page deployment (`/getwork/`).
