@@ -63,30 +63,3 @@
     font-family: "Be Vietnam Pro", system-ui, sans-serif;
   }
 }
-
-@layer utilities {
-  .bg-navy {
-    background-color: #092137;
-  }
-
-  .bg-background {
-    background-color: #ffffff;
-  }
-
-  .text-navy {
-    color: #092137;
-  }
-
-  .text-primary {
-    color: #2d95ec;
-  }
-
-  .text-muted {
-    color: #535353;
-  }
-
-  .bg-primary {
-    background-color: #2d95ec;
-  }
-}
-
