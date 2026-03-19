@@ -41,7 +41,7 @@ export function renderHero() {
               </li>
             </ul>
             <div class="flex items-center mb-[30px]">
-              <button class="bg-[#17BADC] rounded-full text-white font-medium md:text-[20px] text-[14px] md:w-[350px] w-[233px] h-[50px] md:h-[60px] hover:bg-[#138CAB] transition-colors cursor-pointer">Book your free survey and quote</button>
+              <button class="tracking-[-0.4px] font-semibold bg-[#17BADC] rounded-full text-white font-medium md:text-[20px] text-[14px] md:w-[350px] w-[233px] h-[50px] md:h-[60px] hover:bg-[#138CAB] transition-colors cursor-pointer">Book your free survey and quote</button>
               <img src="${trustmarkUrl}" alt="" class="block md:w-[80px] w-[67px] md:h-[50px] h-[42px] md:ml-[30px] ml-[20px]">
             </div>
             <div class="flex items-center md:pl-[29px]">
