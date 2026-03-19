@@ -32,7 +32,7 @@ export function renderHero() {
               <button class="bg-[#17BADC] rounded-full text-white font-medium text-[20px] w-[350px] h-[60px]">Book your free survey and quote</button>
               <img src="/img/trustmark.png" alt="" class="block w-[80px] h-[50px] ml-[30px]">
             </div>
-            <div>
+            <div class="flex items-center pl-[29px]">
               <span class="text-[#D2D2D2] text-[15px] font-medium">Prefer to call?</span><a href="tel:+448008008000" class="text-[#D2D2D2] text-[18px] font-medium">0800 800 8000</a>
             </div>
           </div>
