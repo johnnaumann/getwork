@@ -38,7 +38,7 @@ export function renderHero() {
               <img src="${trustmarkUrl}" alt="" class="block w-[80px] h-[50px] ml-[30px]">
             </div>
             <div class="flex items-center pl-[29px]">
-              <span class="text-[#D2D2D2] text-[15px] font-medium">Prefer to call?</span><a href="tel:+448008008000" class="text-[#D2D2D2] text-[18px] font-medium">0800 800 8000</a>
+              <span class="text-[#D2D2D2] text-[15px] font-medium">Prefer to call?</span><a href="tel:+448008008000" class="text-[#45D1EF] text-[20px] font-title ml-[2px] font-semibold">0800 800 8000</a>
             </div>
           </div>
           <div class="w-[1202px] h-[1054px] absolute top-[-95px] right-[-325px] rotate-[5deg]">
