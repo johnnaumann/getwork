@@ -41,11 +41,11 @@ export function renderHero() {
               </li>
             </ul>
             <div class="flex items-center mb-[30px]">
-              <button class="bg-[#17BADC] rounded-full text-white font-medium md:text-[20px] text-[14px] md:w-[350px] w-[233px] h-[50px] md:h-[60px]">Book your free survey and quote</button>
+              <button class="bg-[#17BADC] rounded-full text-white font-medium md:text-[20px] text-[14px] md:w-[350px] w-[233px] h-[50px] md:h-[60px] hover:bg-[#138CAB] transition-colors cursor-pointer">Book your free survey and quote</button>
               <img src="${trustmarkUrl}" alt="" class="block md:w-[80px] w-[67px] md:h-[50px] h-[42px] md:ml-[30px] ml-[20px]">
             </div>
             <div class="flex items-center md:pl-[29px]">
-              <span class="text-[#D2D2D2] md:text-[15px] text-[14px] font-medium">Prefer to call?</span><a href="tel:+448008008000" class="text-[#45D1EF] md:text-[20px] text-[16px] font-title md:ml-[2px] ml-[6px] font-semibold">0800 800 8000</a>
+              <span class="text-[#D2D2D2] md:text-[15px] text-[14px] font-medium">Prefer to call?</span><a href="tel:+448008008000" class="hover:text-[#138CAB] transition-colors text-[#45D1EF] md:text-[20px] text-[16px] font-title md:ml-[2px] ml-[6px] font-semibold">0800 800 8000</a>
             </div>
           </div>
           <div class="w-[1202px] h-[1054px] absolute top-[-95px] lg:right-[-325px] right-[-165px] rotate-[5deg] hidden md:block">
