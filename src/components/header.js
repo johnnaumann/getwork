@@ -12,7 +12,7 @@ export function renderHeader() {
           />
         </a>
         <div class="flex items-center">
-          <nav class="text-white text-[15px] tracking-[-0.3px]">
+          <nav class="hidden lg:block text-white text-[15px] tracking-[-0.3px]">
             <a href="#features" class="hover:text-primary transition-colors ml-[34px]">Features</a>
             <a href="#social-proof" class="hover:text-primary transition-colors ml-[34px]">Proof</a>
             <a href="#pricing" class="hover:text-primary transition-colors ml-[34px]">Pricing</a>
@@ -21,6 +21,7 @@ export function renderHeader() {
           <a href="#pricing" class="ml-[34px] text-white tracking-[-0.3px] inline-flex items-center justify-center rounded-full bg-primary w-[180px] h-[50px] transition-colors">
             Get started
           </a>
+          <img src="/img/hamburger.png" alt="Hamburger menu" class="block lg:hidden w-[24px] h-[24px] ml-[24px]">
         </div>
       </div>
     </header>
