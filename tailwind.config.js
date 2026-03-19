@@ -3,9 +3,6 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,html}'],
   theme: {
     extend: {
-      screens: {
-        tablet: '1280px'
-      },
       colors: {
         navy: '#092137',
         primary: '#2d95ec',
