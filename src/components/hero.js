@@ -7,7 +7,7 @@ import trustpilotMobileUrl from '/img/trustpilot-mobile.png';
 
 export function renderHero() {
   return `
-    <section id="hero" class="md:h-[720px] h-[570px] w-full relative overflow-hidden">
+    <section id="home" class="md:h-[720px] h-[570px] w-full relative overflow-hidden">
       <div class="absolute top-0 left-0 w-full md:h-[720px] h-[570px] md:px-[35px] px-[20px]">
         <div class="mx-auto flex md:h-[720px] h-[570px] w-[1240px] relative">
           <div class="w-[1202px] h-[1054px] absolute top-[-95px] lg:right-[-325px] md:right-[-165px] right-[-50px] rotate-[5deg]">
