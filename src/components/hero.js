@@ -7,8 +7,8 @@ import trustpilotMobileUrl from '/img/trustpilot-mobile.png';
 
 export function renderHero() {
   return `
-    <section id="hero" class="md:h-[720px] h-[600px] w-full relative overflow-hidden">
-      <div class="absolute top-0 left-0 w-full md:h-[720px] h-[600px] md:px-[35px] px-[20px]">
+    <section id="hero" class="md:h-[720px] h-[570px] w-full relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full md:h-[720px] h-[570px] md:px-[35px] px-[20px]">
         <div class="mx-auto flex md:h-[720px] h-[600px] w-[1220px] relative">
           <div class="w-[1202px] h-[1054px] absolute top-[-95px] lg:right-[-325px] md:right-[-165px] right-[-50px] rotate-[5deg]">
             <img src="${heroPatternUrl}" alt="Hero image" class="absolute top-0 left-0 w-full h-full z-0">
@@ -16,8 +16,8 @@ export function renderHero() {
         </div>
       </div>
 
-      <div class="absolute top-0 left-0 right-0 w-full md:h-[720px] h-[600px]">
-        <div class="absolute bottom-0 left-0 w-full h-[100px] bg-white md:p-[35px] p-[20px]">
+      <div class="absolute top-0 left-0 right-0 w-full md:h-[720px] h-[570px]">
+        <div class="absolute bottom-0 left-0 w-full md:h-[100px] h-[70px] bg-white md:p-[35px] p-[20px]">
           <div class="mx-auto flex w-[1220px] h-full items-center">
             <img src="${trustpilotUrl}" alt="" class="w-[400px] h-[24px] md:block hidden">
             <img src="${trustpilotMobileUrl}" alt="" class="w-[260px] h-[20px] md:hidden block">
@@ -25,9 +25,9 @@ export function renderHero() {
         </div>
       </div>
 
-      <div class="absolute top-0 left-0 w-full md:h-[720px] h-[600px] md:px-[35px] px-[20px]">
+      <div class="absolute top-0 left-0 w-full md:h-[720px] h-[570px] md:px-[35px] px-[20px]">
         <div class="mx-auto flex md:h-[720px] h-[600px] w-[1220px] relative">
-          <div class="lg:mt-[200px] md:mt-[180px] mt-[110px]">
+          <div class="lg:mt-[200px] md:mt-[180px] mt-[105px]">
             <h2 class="text-white text-[27px] md:text-[40px] leading-[34px] md:leading-[51px] w-[390px] md:w-[650px] font-bold balance-text">Certified and trusted roofing specialists <br class="md:hidden">in Glasgow</h2>
             <ul class="text-[#D2D2D2] md:text-[18px] text-[15px] font-medium md:mt-[30px] mt-[35px] font-title mb-[37.5px]">
               <li class="flex items-center mb-[8px]">
