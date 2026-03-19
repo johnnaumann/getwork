@@ -9,7 +9,7 @@ export function renderHero() {
     <section id="hero" class="h-[720px] w-full relative overflow-hidden">
       <div class="absolute top-0 left-0 w-full h-[720px] px-[35px]">
         <div class="mx-auto flex h-[720px] w-[1220px] relative">
-          <div class="w-[1202px] h-[1054px] absolute top-[-95px] right-[-325px] rotate-[5deg]">
+          <div class="w-[1202px] h-[1054px] absolute top-[-95px] lg:right-[-325px] right-[-165px] rotate-[5deg]">
             <img src="${heroPatternUrl}" alt="Hero image" class="absolute top-0 left-0 w-full h-full z-0">
           </div>
         </div>
@@ -25,7 +25,7 @@ export function renderHero() {
 
       <div class="absolute top-0 left-0 w-full h-[720px] px-[35px]">
         <div class="mx-auto flex h-[720px] w-[1220px] relative">
-          <div class="mt-[200px]">
+          <div class="lg:mt-[200px] mt-[180px]">
             <h2 class="text-white text-[40px] leading-[51px] font-bold">Certified and trusted roofing<br>specialists in Glasgow</h2>
             <ul class="text-[#D2D2D2] text-[18px] font-medium mt-[30px] font-title mb-[30px]">
               <li class="flex items-center mb-[8px]">
@@ -46,7 +46,7 @@ export function renderHero() {
               <span class="text-[#D2D2D2] text-[15px] font-medium">Prefer to call?</span><a href="tel:+448008008000" class="text-[#45D1EF] text-[20px] font-title ml-[2px] font-semibold">0800 800 8000</a>
             </div>
           </div>
-          <div class="w-[1202px] h-[1054px] absolute top-[-95px] right-[-325px] rotate-[5deg]">
+          <div class="w-[1202px] h-[1054px] absolute top-[-95px] lg:right-[-325px] right-[-165px] rotate-[5deg]">
             <img src="${heroImageUrl}" alt="Hero image" class="absolute top-[278px] left-[350px] block w-[549.5px] h-[530.5px] relative z-10">
           </div>
         </div>
