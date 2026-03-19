@@ -1,4 +1,5 @@
 import logoUrl from '/logo-strathclyde.svg';
+import hamburgerUrl from '/img/hamburger.png';
 
 export function renderHeader() {
   return `
@@ -21,7 +22,7 @@ export function renderHeader() {
           <a href="#pricing" class="ml-[34px] text-white tracking-[-0.3px] inline-flex items-center justify-center rounded-full bg-primary w-[180px] h-[50px] transition-colors">
             Get started
           </a>
-          <img src="/img/hamburger.png" alt="Hamburger menu" class="block lg:hidden w-[24px] h-[24px] ml-[24px]">
+          <img src="${hamburgerUrl}" alt="Hamburger menu" class="block lg:hidden w-[24px] h-[24px] ml-[24px]">
         </div>
       </div>
     </header>
