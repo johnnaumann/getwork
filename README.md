@@ -41,6 +41,15 @@ npm run dev
 
 Vite will print a local URL (usually `http://localhost:5173`).
 
+### Format (Prettier)
+
+```bash
+npm run format        # write
+npm run format:check  # CI / verify only
+```
+
+Config: `prettier.config.mjs` — **JavaScript** (quotes, semicolons, width), **HTML** (`htmlWhitespaceSensitivity: css`, line wrapping), and **Tailwind** class sorting via `prettier-plugin-tailwindcss` + `tailwindStylesheet` pointing at `src/styles/tailwind.css` (Tailwind v4).
+
 ## Build
 
 ```bash
@@ -51,7 +60,7 @@ Build output is generated in `dist/`.
 
 ### Build-time prerender
 
-Production builds inject the same HTML your components produce into `<main id="app">` via `vite-plugin-prerender-app.mjs` (uses `ssrLoadModule` on `src/prerender/getAppHtml.js`). In dev, `#app` stays empty until `src/js/main.js` runs; in production, the first paint includes the static markup and `main.js` skips re-rendering when children already exist.
+Production builds inject the same HTML your components produce into `<main id="app">` via `vite-plugin-prerender-app.mjs` (uses `ssrLoadModule` on `src/prerender/getAppHtml.js`). After injection, the plugin runs **Prettier** on the final `index.html` (same options as `prettier.config.mjs`, including Tailwind class sorting) so `dist/index.html` is readable. In dev, `#app` stays empty until `src/js/main.js` runs; in production, the first paint includes the static markup and `main.js` skips re-rendering when children already exist.
 
 ## Preview Production Build
 

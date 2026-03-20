@@ -1,5 +1,6 @@
 import { createServer } from 'vite';
 import path from 'node:path';
+import prettier from 'prettier';
 
 /**
  * Prerenders the same markup as src/js/main.js into <main id="app"> at build time.
@@ -35,7 +36,7 @@ export function prerenderAppPlugin() {
         server: { middlewareMode: true, watch: null, hmr: false },
         appType: 'custom',
         logLevel: 'error',
-        optimizeDeps: { noDiscovery: true }
+        optimizeDeps: { noDiscovery: true },
       });
 
       try {
@@ -43,7 +44,9 @@ export function prerenderAppPlugin() {
         const entry = path.resolve(resolvedConfig.root, 'src/prerender/getAppHtml.js');
         const mod = await server.ssrLoadModule(entry);
         if (typeof mod.getAppHtml !== 'function') {
-          throw new Error('prerender-app: getAppHtml must be exported from src/prerender/getAppHtml.js');
+          throw new Error(
+            'prerender-app: getAppHtml must be exported from src/prerender/getAppHtml.js'
+          );
         }
         prerenderedHtml = mod.getAppHtml();
       } finally {
@@ -52,11 +55,16 @@ export function prerenderAppPlugin() {
     },
 
     transformIndexHtml: {
-      order: 'pre',
-      handler(html) {
+      // Run after Vite injects tags so the final document is what we format.
+      order: 'post',
+      async handler(html) {
         if (!prerenderedHtml) {
           throw new Error('prerender-app: prerendered HTML was not generated');
         }
+        if (!resolvedConfig) {
+          throw new Error('prerender-app: missing resolved Vite config');
+        }
+
         const replaced = html.replace(
           /<main id="app"([^>]*)>\s*<\/main>/i,
           `<main id="app"$1>${prerenderedHtml}</main>`
@@ -66,8 +74,18 @@ export function prerenderAppPlugin() {
             'prerender-app: could not find <main id="app"></main> placeholder in index.html'
           );
         }
-        return replaced;
-      }
-    }
+
+        const indexPath = path.resolve(resolvedConfig.root, 'index.html');
+        const prettierOptions =
+          (await prettier.resolveConfig(indexPath, {
+            config: path.resolve(resolvedConfig.root, 'prettier.config.mjs'),
+          })) ?? {};
+
+        return prettier.format(replaced, {
+          ...prettierOptions,
+          filepath: indexPath,
+        });
+      },
+    },
   };
 }

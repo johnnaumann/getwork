@@ -1,49 +1,49 @@
-@import "tailwindcss";
-@config "../../tailwind.config.js";
+@import 'tailwindcss';
+@config '../../tailwind.config.js';
 
 @font-face {
-  font-family: "Be Vietnam Pro";
-  src: url("/fonts/be-vietnam-pro-latin-400-normal.woff2") format("woff2");
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/be-vietnam-pro-latin-400-normal.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Be Vietnam Pro";
-  src: url("/fonts/be-vietnam-pro-latin-600-normal.woff2") format("woff2");
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/be-vietnam-pro-latin-600-normal.woff2') format('woff2');
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Be Vietnam Pro";
-  src: url("/fonts/be-vietnam-pro-latin-700-normal.woff2") format("woff2");
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/be-vietnam-pro-latin-700-normal.woff2') format('woff2');
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/source-sans-pro-latin-400-normal.woff2") format("woff2");
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/source-sans-pro-latin-400-normal.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/source-sans-pro-latin-600-normal.woff2") format("woff2");
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/source-sans-pro-latin-600-normal.woff2') format('woff2');
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/source-sans-pro-latin-700-normal.woff2") format("woff2");
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/source-sans-pro-latin-700-normal.woff2') format('woff2');
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -51,7 +51,7 @@
 
 @layer base {
   body {
-    font-family: "Source Sans Pro", system-ui, sans-serif;
+    font-family: 'Source Sans Pro', system-ui, sans-serif;
   }
 
   h1,
@@ -60,6 +60,6 @@
   h4,
   h5,
   h6 {
-    font-family: "Be Vietnam Pro", system-ui, sans-serif;
+    font-family: 'Be Vietnam Pro', system-ui, sans-serif;
   }
 }

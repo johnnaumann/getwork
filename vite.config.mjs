@@ -7,7 +7,6 @@ export default defineConfig({
   plugins: [prerenderAppPlugin()],
   build: {
     outDir: 'dist',
-    emptyOutDir: true
-  }
+    emptyOutDir: true,
+  },
 });
-
