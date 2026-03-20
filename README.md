@@ -6,6 +6,7 @@ Single-page marketing site built with Vite, vanilla JS components, and Tailwind 
 
 - `vite` for development and production builds
 - `tailwindcss` (via PostCSS) for styling
+- `eslint` + `@eslint/js` for JavaScript linting
 - Component-based HTML rendering in `src/components/*.js`
 
 ## Project Structure
@@ -18,6 +19,7 @@ Single-page marketing site built with Vite, vanilla JS components, and Tailwind 
 - `src/components/services.js`: services section (below hero)
 - `src/styles/tailwind.css`: Tailwind imports, base styles, utility classes
 - `public/`: static assets (images, fonts)
+- `eslint.config.mjs`: ESLint flat config
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow
 
 ## Getting Started
@@ -49,6 +51,23 @@ npm run format:check  # CI / verify only
 ```
 
 Config: `prettier.config.mjs` — **JavaScript** (quotes, semicolons, width), **HTML** (`htmlWhitespaceSensitivity: css`, line wrapping), and **Tailwind** class sorting via `prettier-plugin-tailwindcss` + `tailwindStylesheet` pointing at `src/styles/tailwind.css` (Tailwind v4).
+
+### Lint (ESLint)
+
+```bash
+npm run lint       # check
+npm run lint:fix   # auto-fix where possible
+```
+
+Config: `eslint.config.mjs` — `@eslint/js` **recommended** rules, **Prettier** conflict rules turned off via `eslint-config-prettier`, and **language-specific** settings:
+
+| Area | Files | Settings |
+|------|--------|----------|
+| Browser (Vite client) | `src/**/*.js` | `sourceType: module`, `globals: browser` |
+| Node (ESM tooling) | `**/*.mjs` | `sourceType: module`, `globals: node` |
+| Node (CommonJS) | `postcss.config.js`, `tailwind.config.js` | `sourceType: commonjs`, `globals: node` |
+
+**HTML / CSS / workflow YAML** are not linted by ESLint here; use **Prettier** for formatting (`index.html`, `src/styles/tailwind.css`, etc.). Add **Stylelint** or a **YAML** ESLint plugin later if you want stricter checks.
 
 ## Build
 
