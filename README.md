@@ -11,7 +11,8 @@ Single-page marketing site built with Vite, vanilla JS components, and Tailwind 
 ## Project Structure
 
 - `index.html`: app shell with `#app` mount point
-- `src/js/main.js`: imports styles + components, renders page sections
+- `src/js/main.js`: imports styles + components, renders page sections (dev / empty `#app`)
+- `src/prerender/getAppHtml.js`: same sections as strings for the build-time prerender plugin
 - `src/components/header.js`: top navigation/header
 - `src/components/hero.js`: hero section and above-the-fold content
 - `src/components/services.js`: services section (below hero)
@@ -47,6 +48,10 @@ npm run build
 ```
 
 Build output is generated in `dist/`.
+
+### Build-time prerender
+
+Production builds inject the same HTML your components produce into `<main id="app">` via `vite-plugin-prerender-app.mjs` (uses `ssrLoadModule` on `src/prerender/getAppHtml.js`). In dev, `#app` stays empty until `src/js/main.js` runs; in production, the first paint includes the static markup and `main.js` skips re-rendering when children already exist.
 
 ## Preview Production Build
 
