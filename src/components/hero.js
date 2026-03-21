@@ -2,8 +2,7 @@ import heroPatternUrl from '/img/hero-pattern.png';
 import listIconUrl from '/img/list.png';
 import trustmarkUrl from '/img/trustmark.png';
 import heroImageUrl from '/img/hero-image.png';
-import trustpilotUrl from '/img/trustpilot.png';
-import trustpilotMobileUrl from '/img/trustpilot-mobile.png';
+import { renderTrustpilotWidget } from './trustpilot-widget.js';
 
 export function renderHero() {
   return `
@@ -17,10 +16,13 @@ export function renderHero() {
       </div>
 
       <div class="absolute top-0 left-0 right-0 w-full h-[570px] md:h-[713px] lg:h-[720px]">
-        <div class="absolute bottom-0 left-0 w-full md:h-[100px] h-[70px] bg-white md:p-[35px] p-[20px]">
-          <div class="mx-auto flex w-[1240px] h-full items-center">
-            <img src="${trustpilotUrl}" alt="" class="w-[400px] h-[24px] md:block hidden">
-            <img src="${trustpilotMobileUrl}" alt="" class="w-[260px] h-[20px] md:hidden block">
+        <div
+          class="absolute bottom-0 left-0 flex w-full min-h-[88px] items-center bg-white px-[20px] py-[16px] md:min-h-[112px] md:px-[35px] md:py-[20px]"
+        >
+          <div class="mx-auto flex w-full max-w-[1240px] items-center justify-start">
+            <div class="w-full max-w-[260px] shrink-0 md:max-w-[400px]">
+              ${renderTrustpilotWidget()}
+            </div>
           </div>
         </div>
       </div>

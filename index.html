@@ -7,6 +7,12 @@
   </head>
   <body class="bg-navy">
     <main id="app" class="min-h-screen"></main>
+    <!-- Module runs first (fills #app in dev); sync bootstrap runs after so `.trustpilot-widget` nodes exist. -->
     <script type="module" src="/src/js/main.js"></script>
+    <script
+      type="text/javascript"
+      defer
+      src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.sync.bootstrap.min.js"
+    ></script>
   </body>
 </html>
