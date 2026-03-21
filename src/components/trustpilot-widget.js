@@ -1,9 +1,3 @@
-/**
- * TrustBox shell — edit attributes below to match Trustpilot Business → Integrations → TrustBox.
- * Loader: `tp.widget.sync.bootstrap.min.js` in index.html (after the module entry).
- *
- * Profile: https://www.trustpilot.com/review/www.strathclydedomesticroofing.co.uk
- */
 export function renderTrustpilotWidget() {
   return `
     <div
